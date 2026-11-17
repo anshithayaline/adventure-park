@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.75)),
+                url('https://unsplash.com') center/cover no-repeat;
+            min-height: 75vh;
+        }
+
+        .challenge-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .challenge-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .card-img-top {
+            height: 210px;
+            object-fit: cover;
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-light">
+
+    
+    <header class="hero-section d-flex align-items-center text-white text-center">
+        <div class="container py-5">
+            <span class="badge bg-warning text-dark text-uppercase px-3 py-2 mb-3 fw-bold">2026 Outdoor
+                Expedition</span>
+            <h1 class="display-3 fw-bolder mb-3">Conquer the Ultimate Adventure Park</h1>
+            <p class="lead mb-4 mx-auto" style="max-width: 680px;">
+                Test your grit across 5 high-adrenaline obstacles. Complete every stage to earn the Golden Summit
+                Medallion and free park passes.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#challenges" class="btn btn-warning btn-lg fw-bold px-4">Explore Obstacles</a>
+                <button class="btn btn-outline-light btn-lg px-4" data-bs-toggle="modal"
+                    data-bs-target="#registerModal">
+                    Register Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+  
+    <section class="bg-dark text-white py-4 border-top border-secondary">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-6 col-md-3">
+                    <h3 class="fw-bold text-warning mb-0">5</h3>
+                    <small class="text-uppercase text-light">Extreme Zones</small>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="fw-bold text-warning mb-0">120 FT</h3>
+                    <small class="text-uppercase text-light">Max Elevation</small>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="fw-bold text-warning mb-0">3 HRS</h3>
+                    <small class="text-uppercase text-light">Target Time</small>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="fw-bold text-warning mb-0">800 PTS</h3>
+                    <small class="text-uppercase text-light">Grand Reward</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Grid -->
+    <section id="challenges" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">The 5 Park Challenges</h2>
+                <p class="text-muted">Check off each obstacle as you complete it to track your live progress below.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Challenge 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm challenge-card">
+                        <img src="skyline.jpeg" class="card-img-top" alt="Skyline Cliff Climb">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-danger">Hard</span>
+                                <span class="text-muted fw-semibold small">+200 PTS</span>
+                            </div>
+                            <h5 class="card-title fw-bold">1. Skyline Cliff Climb</h5>
+                            <p class="card-text text-muted small">Scale an 85-foot vertical granite wall with
+                                overhanging holds and timed checkpoint bells.</p>
+                            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                                <span class="small text-secondary"><i class="bi bi-clock me-1"></i>25 mins</span>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input challenge-check" type="checkbox" id="chk1"
+                                        data-points="200">
+                                    <label class="form-check-label small fw-semibold" for="chk1">Completed</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm challenge-card">
+                        <img src="zipline.jpeg" class="card-img-top" alt="Canopy Zipline Rush">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Easy</span>
+                                <span class="text-muted fw-semibold small">+100 PTS</span>
+                            </div>
+                            <h5 class="card-title fw-bold">2. Canopy Zipline Rush</h5>
+                            <p class="card-text text-muted small">Soar 1,200 feet across the pine gorge at speeds
+                                reaching 45 mph over the river valley.</p>
+                            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                                <span class="small text-secondary"><i class="bi bi-clock me-1"></i>15 mins</span>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input challenge-check" type="checkbox" id="chk2"
+                                        data-points="100">
+                                    <label class="form-check-label small fw-semibold" for="chk2">Completed</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm challenge-card">
+                        <img src="kayak run.jpeg" class="card-img-top" alt="Whitewater Rapids">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning text-dark">Medium</span>
+                                <span class="text-muted fw-semibold small">+150 PTS</span>
+                            </div>
+                            <h5 class="card-title fw-bold">3. Whitewater Kayak Run</h5>
+                            <p class="card-text text-muted small">Navigate Class III rapids through 12 slalom gates
+                                without capsizing or missing a buoy.</p>
+                            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                                <span class="small text-secondary"><i class="bi bi-clock me-1"></i>35 mins</span>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input challenge-check" type="checkbox" id="chk3"
+                                        data-points="150">
+                                    <label class="form-check-label small fw-semibold" for="chk3">Completed</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class=" card h-100 border-0 shadow-sm challenge-card">
+                        <img src="treetop rope.jpeg" class="card-img-top" alt="Treetop Rope Bridge">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning text-dark">Medium</span>
+                                <span class="text-muted fw-semibold small">+150 PTS</span>
+                            </div>
+                            <h5 class="card-title">4. Treetop Rope Gauntlet</h5>
+                            <p class="card-text text-muted small">Cross swinging logs, cargo nets, and suspended
+                                tightropes 60 feet above the forest floor.</p>
+                            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                                <span class="small text-secondary">30 mins</span>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input challenge-check" type="checkbox" id="chk4"
+                                        data-points="150">
+                                    <label class="form-check-label small fw-semibold" for="chk4">Completed</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class=" card h-100 border-0 shadow-sm challenge-card">
+                        <img src="off road atv.jpeg" alt="off road atv">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-danger">Hard</span>
+                                <span class="text-muted fw-semibold small">+200 PTS</span>
+                            </div>
+                            <h5 class="card-title">5. Off Road All-Terrain Vehicle</h5>
+                            <p class="card-text text-muted small">tricky obstacle, mud rut, or sandy trail leaves a lasting adrenaline high and a sense of adventure. </p>
+                            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                                <span class="small text-secondary">30 mins</span>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input challenge-check" type="checkbox" id="chk5" data-points="200">
+                                    <label class="form-check-label small fw-semibold" for="chk5"> Completed</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+                    </script>
+</body>
+
+</html>
